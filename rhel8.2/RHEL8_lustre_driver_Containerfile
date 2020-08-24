@@ -9,6 +9,8 @@ RUN wget https://fsx-lustre-client-repo-public-keys.s3.amazonaws.com/fsx-rpm-pub
 
 RUN yum install -y kmod-lustre-client lustre-client
 
+RUN yum install -y net-tools iproute
+
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
 
 RUN yum -y install kmod-wireguard wireguard-tools
